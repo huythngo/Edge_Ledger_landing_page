@@ -1,0 +1,72 @@
+#what .items{
+    display: block;
+}
+
+/* align icon to the left */
+#what .items .item{
+    display: flex;
+    text-align: left;
+}
+
+#what .items .item i {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+}
+
+/* smartphones */
+@media (max-width: 550px) {
+    #navbar{
+        flex-direction: column;
+        align-content: center;
+    }
+    #navbar .logo{
+        margin-bottom: 1rem;
+    }
+
+    #showcase .showcase-content{
+        top: 108px;
+    }
+
+    #who{
+        flex-direction: column;
+    }
+
+    #who .who-im {
+        display: none;
+    }
+
+    #client .items img{
+        width: 80%;
+    }
+
+    #client .items div:last-child{
+        display: none;
+    }
+
+    #client h2{
+        margin-bottom: 0;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+    
+    #contact .map{
+        background: url(../img/showcase.jpg);
+        height: 500px;
+    }
+}
+
+@media (max-height: 568px) {
+    .l-heading{
+        font-size: 3rem;
+    }
+    .lead{
+        font-size: 1rem;
+    }
+    
+    #contact .contact-form{
+        padding: 1.5rem;
+    }
+}
